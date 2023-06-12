@@ -13,10 +13,8 @@ function createWorld(cols, rows) {
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
-    console.log(windowWidth)
-    console.log(windowHeight)
-    cols = width / res;
-    rows = height / res;
+    cols = Math.round(width / res);
+    rows = Math.round(height / res);
     world = createWorld(cols, rows)
     for(let i = 0; i < cols; i++) {
         for(let j = 0; j < rows; j++) {
